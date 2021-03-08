@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  background: #252A38;
+  background-image: linear-gradient(to right bottom, #252A38, #383A42, #424F60);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+/* navigation */
+ul {
+  list-style: none;
+}
+
+.logo {
+  font-size: 1.5em;
+  padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+  display: block;
+  color: #F8F6F8;
+}
+
+.navigation {
+  margin-top: 5px;
+}
+
+.navigation a {
+  padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+  display: block;
+  color: #F8F6F8;
+  text-decoration: none;
+}
+
+.navigation p {
+  padding: 10px 15px;
+	text-transform: lowercase;
+	text-align: center;
+  display: block;
+  color: #F8F6F8;
+  text-decoration: none;
+}
+
+
+.navigation a:hover {
+	color: #798991;
+}
+
+nav {
+  padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #252A38;
+	background-color: #252A38;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+}
+
+header {
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #F8F6F8;
+}
+
+.greeting h1 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: #F8F6F8;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  color: #F8F6F8;
+}
+
+.buttons, .buttons-container {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  text-align: center;
+}
+
+.button{
+  background-color: #154ba5;
+  border-radius: 26px;
+  display:block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor:pointer;
+  color:#F8F6F8;
+  font-size:1em;
+  font-weight:bold;
+  text-decoration:none;
+  margin-top: 3vh;
+}
+
+.button:hover {
+  background-color: #2768da;
+}
+
+#signup {
+  background-color:#154ba5;
+  color: white;
+}
+
+#signup:hover {
+  background-color: #2768da;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #252A38;
+  width: 410px;
+  padding: 30px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.container .text{
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+  color: #F8F6F8;
+}
+
+.container form{
+  margin-top: -20px;
+}
+
+.container form .input-data{
+  height: 2em;
+  width: 100%;
+  margin: 40px 0;
+}
+
+form .input-data label{
+  font-size: 18px;
+  color: #F8F6F8;
+}
+form .input-data input{
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 1px solid #a2a2a2;
+}
+
+form .input-data input:focus{
+  border-bottom-color: #154BA5;
+  border-bottom-width: 2px;
+}
+
+.modal-buttons {
+  background: #154ba5;
+  font-family: inherit;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 26px;
+}
+.buttons-container {
+    margin:auto 0;
+    text-align: center;
+}
+
+
+.project-view {
+  display: flex;
+  background-color:rgba(255, 255,255, 0.2);
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.1em;
+  width: 70vw;
+  align-items: center;
+  color: #F8F6F8;
+}
+
+.project-view > div {
+  padding: 0.7em;
+  font-size: 1em;
+
+}
+.vpbutton {
+  background-color: #154ba5;
+  border-radius: 13px;
+  display:inline-block;
+  padding: 4px;
+  margin: 0 0.5em;  
+  cursor:pointer;
+  color:#F8F6F8;
+  font-size:0.6em;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.tasktable {
+  width: 95%;
+  margin: 0 auto;
+  max-height: 50vh;
+  overflow: scroll;
+  position: relative;
+  margin-top: 2vh;
+}
+
+table {
+  position: relative;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0.25em;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.active {
+  background-color: darkviolet;
+  border: none;
+}
+
+.inactive {
+  background-color: white;
+}
+
+thead th {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+  font-size: 0.6em;
+  background-color: #252A38;
+  color: #F8F6F8;
+}
+
+thead th:first-child {
+  left: 0;
+  z-index: 1;
+  background-color: #252A38;
+  color: #F8F6F8;
+}
+
+tbody th {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  left: 0;
+  font-size: 0.7em;
+  background-color: #252A38;
+  color: #F8F6F8;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+  height: 1em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #252A38; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+a.theme2 {
+  display: none;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+/*TABLET*/
+
+@media (min-width: 769px) {
+	nav,
+	.navigation {
+		display: flex;
+  }
+  
+	nav {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin: 0 auto;
+  }
+  
+  .menu {
+    display: none;
+  }
+
+  header {
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .greeting h1 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+
+  .tasktable {
+    max-height: 65vh;
+  }
+
+  .vpbutton {
+    font-size: 1em;
+    padding: 8px;
+  }
+  
+}
+
+/*DESKTOP*/
+@media (min-width: 1025px) {
+	nav {
+		flex-direction: row;
+		justify-content: space-between;
+  }
+  
+  .menu {
+    display: none;
+  }
+
+  header {
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15vh;
+    text-align: center;
+  }
+  
+  .greeting h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+  }
+  .buttons {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-align: center;
+  }
+
+  .button {
+    border-radius: 26px;
+    display:inline-block;
+    padding: 20px 50px;
+    cursor:pointer;
+    color:#F8F6F8;
+    font-size:2em;
+    font-weight:bold;
+    text-decoration:none;
+    margin: 3vh 3vh;
+  }
+
+  .vpbutton {
+    font-size: 1em;
+    padding: 8px;
+  }
+
+}
